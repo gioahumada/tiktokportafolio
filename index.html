@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>giooo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="app__videos">
+        <div class="video">
+            <img src="xde.jpg" class="video__player"></img>
+
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">star</span>
+                    <p>12</p>
+                </div>
+
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">sms</span>
+                    <p>23</p>
+                </div>
+
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">ios_share</span>
+                    <p>11</p>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>Giovanni Ahumada</h3>
+                    <p class="videoFooter__description">Best Video</p>
+
+                    <div class="videoFooter__ticker">
+                        <span class="material-symbols-outlined videoFooter__icon">music_note</span>
+                        <marquee>Song Name</marquee>
+                    </div>
+                </div>
+
+                <img class="videoFooter_record" src="" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="video">
+            <img src="ad2c7fdc725cb3b9add7f14b7324ad76.jpg" class="video__player"></img>
+
+            <!-- sidebar -->
+            <div class="videoSidebar">
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">star</span>
+                    <p>12</p>
+                </div>
+
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">sms</span>
+                    <p>23</p>
+                </div>
+
+                <div class="videoSidebar_button">
+                    <span class="material-symbols-outlined">ios_share</span>
+                    <p>11</p>
+                </div>
+
+            </div>
+
+            <!-- footer -->
+
+            <div class="videoFooter">
+                <div class="videoFooter__text">
+                    <h3>Lorem ipsum</h3>
+                    <p class="videoFooter__description">Lorem ipsum</p>
+
+                    <div class="videoFooter__ticker">
+                        <span class="material-symbols-outlined videoFooter__icon">music_note</span>
+                        <marquee>Lorem ipsum</marquee>
+                    </div>
+                </div>
+
+                <img class="videoFooter_record" src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const video = document.querySelectorAll('video');
+
+        for (const video of videos) {
+            video.addEventListener('click', function() {
+                if (video.paused) {
+                    video.play();
+                } else {
+                    video.pause();
+                }
+            });
+        }
+    </script>
+</body>
+</html>
