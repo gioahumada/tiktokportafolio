@@ -6,10 +6,6 @@
     <title>giooo</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&family=Roboto&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
@@ -96,9 +92,9 @@
     </div>
 
     <script>
-        const video = document.querySelectorAll('video');
+        const videos = document.querySelectorAll('.video__player');
 
-        for (const video of videos) {
+        videos.forEach(video => {
             video.addEventListener('click', function() {
                 if (video.paused) {
                     video.play();
@@ -106,7 +102,7 @@
                     video.pause();
                 }
             });
-        }
+        });
     </script>
 </body>
 </html>

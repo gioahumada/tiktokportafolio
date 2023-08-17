@@ -9,8 +9,7 @@ html {
 
 body {
     color: white;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     text-rendering: geometricPrecision;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -22,11 +21,12 @@ body {
     display: grid;
     place-items: center;
     overflow-x: hidden;
+    margin: 0; /* Eliminamos el margen para ajustar completamente al navegador */
 }
 
 .app__videos {
     position: relative;
-    height: 750px;
+    height: 100vh; /* Cambiamos la altura para ocupar toda la ventana */
     background-color: white;
     overflow: scroll;
     width: 100%;
@@ -51,7 +51,7 @@ body {
     width: 100%;
     background-color: white;
     scroll-snap-align: start;
-
+    border-radius: 20px; /* Mantenemos el mismo borde redondeado */
 }
 
 .video__player {
